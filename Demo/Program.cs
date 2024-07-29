@@ -21,7 +21,7 @@ namespace Demo
             //Console.WriteLine("Count : " + Numbers.Count);
             //Console.WriteLine("Capacity : " + Numbers.Capacity);
 
-            //for (int i = 0; i < Numbers.Count; i++)
+            //for (int i = 0; i < Numbers.Count; i++) 
             //{
             //    Console.WriteLine(Numbers[i]);
             //} 
