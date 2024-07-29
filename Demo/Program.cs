@@ -4,6 +4,21 @@ namespace Demo
 {
     internal class Program
     {
+
+      static public int Sum(ArrayList Numbers)
+        {
+            int Sum = 0;
+            if (Numbers is not null)
+            {
+                for (int i = 0; i < Numbers.Count; i++)
+                {
+                    Sum += (int?)Numbers[i] ?? 0;
+                }
+            }
+
+            return Sum;
+        }
+        
         static void Main(string[] args)
         {
             #region ArrayList
@@ -21,12 +36,15 @@ namespace Demo
             //Console.WriteLine("Count : " + Numbers.Count);
             //Console.WriteLine("Capacity : " + Numbers.Capacity);
 
-            //for (int i = 0; i < Numbers.Count; i++) 
+            //for (int i = 0; i < Numbers.Count; i++)
             //{
-            //    Console.WriteLine(Numbers[i]); 
-            //} 
+            //    Console.WriteLine(Numbers[i]);
+            //}
+            #endregion
+            #region NonGenric Cons
+            //Console.WriteLine(Sum(Numbers)); 
             #endregion
 
         }
     }
-}
+} 
