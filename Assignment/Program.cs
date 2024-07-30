@@ -52,6 +52,30 @@ class Program
         //}
         #endregion
 
+        #region Q2
+        //2. Given a number N and an array of N numbers. Determine if it's palindrome or not
+        //int N=int.Parse(Console.ReadLine());
+        //string input;
+        //input = Console.ReadLine();
+        //int[] arr =input.Split(' ').Select(int.Parse).ToArray();
+
+        //if (N !=arr.Length)
+        //{
+        //  Console.WriteLine("The number of input  doesnt equal size");
+        //}
+
+        //for (int i = 0; i < N/2; i++)
+        //{
+        //    if (arr[i] != arr[N-i-1])
+        //    {
+        //        Console.WriteLine("No");
+        //        return;
+        //    }
+
+        //}
+        //Console.WriteLine("Yes");
+
+        #endregion
 
 
     }
