@@ -159,9 +159,16 @@ namespace Demo
             //Stack.Push(2);
             //Stack.Push(1);
 
-           
+
             //Console.WriteLine(Stack.Pop());
             //Stack.Peek();
+            #endregion
+            #region Queue
+            //Queue<int> Queue = new Queue<int>();    
+            //Queue.Enqueue(1);
+            //Queue.Enqueue(2);
+            //     Queue.Enqueue(3);
+            //Console.WriteLine(Queue.TryDequeue(out int value));
             #endregion
         }
     }
