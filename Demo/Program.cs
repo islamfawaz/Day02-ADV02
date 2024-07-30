@@ -88,7 +88,64 @@ namespace Demo
 
             #endregion
 
+            #region List Method
+            List<int> List = new List<int>();
 
+            // List.Add(1);
+            // List.AddRange([3,6]);
+            // List.InsertRange(3, [ 5, 6, 7 ]);
+            // List.Insert(3, 4);
+
+
+            // IReadOnlyList<int> ReadOnlyNo = List.AsReadOnly();
+            // for (int i = 0; i < List.Count; i++)
+            //{
+            //    Console.WriteLine(List[i]);
+            //}
+
+
+            #region BinarySearch
+            //Console.WriteLine(List.BinarySearch(2));
+            //List<Employee> employees = new List<Employee>()
+            //{
+            //    new Employee(10,"Islam",3232),
+            //    new Employee(20,"Ahmed",5433),
+            //    new Employee(30,"Fawaz",29435)
+            //};
+            //int index = employees.BinarySearch(new Employee() { salary = 29435 });
+            //Console.WriteLine("index of employee : " + index);
+
+            //int indexx = employees.BinarySearch(new Employee() { Name = "Ahmed" }, new EmployeeComparer());
+            //Console.WriteLine("search by name : " + indexx);
+            //int indexxx = employees.BinarySearch(1, 2, new Employee() { Name = "Ahmed" }, new EmployeeComparer());
+
+            #endregion
+            
+            List.Clear();
+            List.Contains(2);
+            List<long> newNumber = List.ConvertAll<long>(N => N);
+            List<long> newNo = List.Select<int, long>(N => (long)N).ToList();
+            int[] arr= new int[5];
+            List.CopyTo(arr);
+
+
+           int even= List.Find(n => n % 2 == 0);
+            int evenn = List.FindIndex(n=> n % 2 == 0);
+            bool isExist = List.Exists(hambozo => hambozo % 2 == 0);
+            List.TrueForAll(hambozo => hambozo % 2 == 0);
+
+            Console.WriteLine(even);
+
+            List.ForEach(hambozo => { hambozo += 100; });
+            List.GetRange(2, 3);
+            List.Slice(3, 4);
+            List.IndexOf(3, 4);
+            List.LastIndexOf(3, 4);
+            List.RemoveAt(0);
+            List.RemoveAll(n =>n>4);
+
+
+            #endregion
         }
     }
 } 
