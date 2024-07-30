@@ -89,7 +89,7 @@ namespace Demo
             #endregion
 
             #region List Method
-            List<int> List = new List<int>();
+            // List<int> List = new List<int>();
 
             // List.Add(1);
             // List.AddRange([3,6]);
@@ -120,31 +120,48 @@ namespace Demo
             //int indexxx = employees.BinarySearch(1, 2, new Employee() { Name = "Ahmed" }, new EmployeeComparer());
 
             #endregion
-            
-            List.Clear();
-            List.Contains(2);
-            List<long> newNumber = List.ConvertAll<long>(N => N);
-            List<long> newNo = List.Select<int, long>(N => (long)N).ToList();
-            int[] arr= new int[5];
-            List.CopyTo(arr);
+
+            // List.Clear();
+            // List.Contains(2);
+            // List<long> newNumber = List.ConvertAll<long>(N => N);
+            // List<long> newNo = List.Select<int, long>(N => (long)N).ToList();
+            // int[] arr= new int[5];
+            // List.CopyTo(arr);
 
 
-           int even= List.Find(n => n % 2 == 0);
-            int evenn = List.FindIndex(n=> n % 2 == 0);
-            bool isExist = List.Exists(hambozo => hambozo % 2 == 0);
-            List.TrueForAll(hambozo => hambozo % 2 == 0);
+            //int even= List.Find(n => n % 2 == 0);
+            // int evenn = List.FindIndex(n=> n % 2 == 0);
+            // bool isExist = List.Exists(hambozo => hambozo % 2 == 0);
+            // List.TrueForAll(hambozo => hambozo % 2 == 0);
 
-            Console.WriteLine(even);
+            // Console.WriteLine(even);
 
-            List.ForEach(hambozo => { hambozo += 100; });
-            List.GetRange(2, 3);
-            List.Slice(3, 4);
-            List.IndexOf(3, 4);
-            List.LastIndexOf(3, 4);
-            List.RemoveAt(0);
-            List.RemoveAll(n =>n>4);
+            // List.ForEach(hambozo => { hambozo += 100; });
+            // List.GetRange(2, 3);
+            // List.Slice(3, 4);
+            // List.IndexOf(3, 4);
+            // List.LastIndexOf(3, 4);
+            // List.RemoveAt(0);
+            // List.RemoveAll(n =>n>4);
 
 
+            #endregion
+            #region LinkedList
+            //LinkedList<int> lst = new LinkedList<int>();
+
+            //LinkedListNode<int> FirstNode = lst.AddFirst(1);
+            //LinkedListNode<int> SecondNode = lst.AddFirst(2);
+            //Console.WriteLine(FirstNode.Next.Value);
+            #endregion
+
+            #region Stack
+            //Stack<int> Stack = new Stack<int>();
+            //Stack.Push(2);
+            //Stack.Push(1);
+
+           
+            //Console.WriteLine(Stack.Pop());
+            //Stack.Peek();
             #endregion
         }
     }
